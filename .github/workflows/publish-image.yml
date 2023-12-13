@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v3
       - name: build
         run: |
-          docker build . -t aphichatt/react.test:latest
+          docker build . -t aphichatt/react.project:latest
       - name: publish
         run: |
           docker login -u aphichatt -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push aphichatt/react.test:latest
+          docker push aphichatt/react.project:latest
