@@ -1,7 +1,6 @@
 name: Publish image to Docker Hub
 on:
-  pull_request:
-    types: ['opened', 'edited', 'reopened', 'synchronize']
+  [workflow_dispatch]
 
 jobs:
   publish_image:
